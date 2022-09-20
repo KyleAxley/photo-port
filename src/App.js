@@ -15,13 +15,12 @@ function App() {
 
   return (
     <div>
-      <Nav>
-        categories={categories}
+      <Nav categories={categories}
         setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
+        currentCategory={currentCategory}>
       </Nav>
       <main>
-        <Gallery></Gallery>
+        <Gallery currentCategory={currentCategory}></Gallery>
         <About></About>
       </main>
     </div>
